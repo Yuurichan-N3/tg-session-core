@@ -1,6 +1,6 @@
 <div align="center">
 
-# ✨ YUURI — Telegram Session Core
+# ✨ Telegram Session Core
 
 <img src="./image/image.png" width="85%"/>
 
@@ -11,7 +11,7 @@
 
 ## ⬇️ Download (Windows)
 
-### 📦 Yuuri.exe
+### Yuuri.exe
 
 **Direct download:**  
 https://drive.google.com/uc?export=download&id=13n0p0wHCJu6BcHP34a6dzHUdvNopH3ZG
@@ -19,18 +19,16 @@ https://drive.google.com/uc?export=download&id=13n0p0wHCJu6BcHP34a6dzHUdvNopH3ZG
 **Mirror (Google Drive page):**  
 https://drive.google.com/file/d/13n0p0wHCJu6BcHP34a6dzHUdvNopH3ZG/view?usp=sharing
 
-📌 **Notes**
-- Place `Yuuri.exe` in the same directory as this repository  
-- Do not rename the executable  
-- Run the file directly after download
-
 ---
 
-## 🛠️ Installation & Directory Structure
+## 📂 Required Directory Structure
+
+`Yuuri.exe` **must** be placed together with the `.env` file.
 
 ```
 tg-session-core/
 ├─ Yuuri.exe
+├─ .env
 ├─ Session/
 │  ├─ account1.session
 │  ├─ account2.session
@@ -40,7 +38,34 @@ tg-session-core/
 └─ README.md
 ```
 
-📁 The `Session` folder will be created automatically if it does not exist.
+The `Session` folder will be created automatically if it does not exist.
+
+---
+
+## ⚙️ Environment Configuration (.env)
+
+Before running the application, you **must create a `.env` file** in the same directory as `Yuuri.exe`.
+
+### Example `.env` file
+```
+APP_ID=12345678
+APP_HASH=abcdef1234567890abcdef1234567890
+```
+
+Notes:
+- Do not use quotes
+- One variable per line
+
+---
+
+## 🔑 How to Get Telegram API ID & API HASH
+
+1. Go to https://my.telegram.org
+2. Login with your Telegram account
+3. Select **API development tools**
+4. Fill in the required fields (App title & Short name)
+5. Copy your **API ID** and **API HASH**
+6. Paste them into the `.env` file
 
 ---
 
@@ -50,14 +75,15 @@ This application **requires a valid license** to run.
 
 ### How to obtain a license
 1. Open the Telegram bot:  
-   https://t.me/SentinelicenseBot/?start=6004380466
+   https://t.me/SentinelicenseBot/?start=Yuurisan
 2. Select the label: **TELEGRAM**
 3. Copy the generated license key
 4. Paste the license key when the program requests it
 
-⏳ Expired or invalid licenses will cause the application to exit automatically.
+Invalid or expired licenses will cause the application to exit automatically.
 
 ---
+
 
 ## ✨ Full Feature List
 
@@ -183,4 +209,3 @@ https://t.me/sentineldiscus
 
 Use of this tool is entirely at your own risk.  
 The developer is not responsible for any misuse or damage resulting from the use of this software.
-
