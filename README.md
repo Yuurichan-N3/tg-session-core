@@ -14,20 +14,20 @@
 ### Yuuri.exe
 
 **Direct download:**  
-https://drive.google.com/uc?export=download&id=13n0p0wHCJu6BcHP34a6dzHUdvNopH3ZG
+https://drive.google.com/uc?export=download&id=1ip_ZGJCl3tV-sgVfgFxJjHheR73dVsqw
 
 **Mirror (Google Drive page):**  
-https://drive.google.com/file/d/13n0p0wHCJu6BcHP34a6dzHUdvNopH3ZG/view?usp=sharing
+https://drive.google.com/file/d/1ip_ZGJCl3tV-sgVfgFxJjHheR73dVsqw/view?usp=sharing
 
 ---
 
 ## 📂 Required Directory Structure
 
-`Yuuri.exe` **must** be placed together with the `.env` file.
+`Yuurigram.exe` **must** be placed together with the `.env` file.
 
 ```
 tg-session-core/
-├─ Yuuri.exe
+├─ Yuurigram.exe
 ├─ .env
 ├─ Session/
 │  ├─ account1.session
