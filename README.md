@@ -1,211 +1,166 @@
 <div align="center">
 
-# ✨ Telegram Session Core
+<img width="100%" alt="header" src="https://capsule-render.vercel.app/api?type=waving&height=210&text=TG%20Session%20Core&fontAlign=50&fontAlignY=35&fontSize=54&desc=Multi-Session%20Telegram%20Tools%20(%20EXE%20Release%20)&descAlign=50&descAlignY=58"/>
 
-<img src="./image/image.png" width="95%"/>
+<img alt="typing" src="https://readme-typing-svg.demolab.com?font=Inter&size=18&duration=3200&pause=650&center=true&vCenter=true&width=900&lines=Multi-session+Telegram+automation+tools;Extract+WebApp+initData+%7C+Join%2FLeave+%7C+Reaction+%7C+2FA;NEW%3A+Auto+Solve+Math+Quiz+%7C+Auto+Click+Inline+%7C+Auto+Chat"/>
 
+<p>
+  <img alt="telegram" src="https://img.shields.io/badge/Telegram-Session%20Tools-26A5E4?logo=telegram&logoColor=white"/>
+  <img alt="windows" src="https://img.shields.io/badge/Windows-EXE%20Release-0078D4?logo=windows&logoColor=white"/>
+  <img alt="multi-account" src="https://img.shields.io/badge/Multi-Account-111111"/>
+  <img alt="license" src="https://img.shields.io/badge/License-Key%20Required-111111"/>
+</p>
+
+<p>
+  <b>tg-session-core</b> adalah toolkit Telegram berbasis <i>session</i> untuk kebutuhan utilitas (multi akun, extract initData, manage chat, dan mode auto).
+  Project ini didistribusikan sebagai <b>EXE</b> bernama <b>Yuurigram.exe</b>.
+</p>
 
 </div>
 
 ---
 
-## ⬇️ Download (Windows)
+## 🚀 Download (EXE Release)
 
-### Yuuri.exe
-
-**Direct download:**  
-https://drive.google.com/uc?export=download&id=1ip_ZGJCl3tV-sgVfgFxJjHheR73dVsqw
-
-**Mirror (Google Drive page):**  
-https://drive.google.com/file/d/1ip_ZGJCl3tV-sgVfgFxJjHheR73dVsqw/view?usp=sharing
+- **Latest EXE (Google Drive):** <a href="https://drive.google.com/file/d/15CInvp5MHD6aW5c9uEv3IwmWM6MZK25_/view?usp=sharing"><b>Download Yuurigram.exe</b></a>
+- **Ambil LICENSE Key:** <a href="tg://resolve?domain=SentinelicenseBot&start=6004380466"><b>SentinelicenseBot</b></a>
 
 ---
 
-## 📂 Required Directory Structure
+## ⚡ Quick Start (EXE)
+1) Download EXE dari bagian **Download (EXE Release)**  
+2) Jalankan EXE → masukkan **LICENSE Key**  
+3) Isi `APP_ID` & `APP_HASH` (bisa via prompt, atau taruh di file `.env`)  
+4) Semua session akan tersimpan di folder **`Session/`** (auto dibuat)  
+5) Jalankan fitur yang kamu butuhkan dari menu
 
-`Yuurigram.exe` **must** be placed together with the `.env` file.
+> Tips: kalau kamu pakai banyak akun, pastikan file `*.session` ada di folder `Session/`.
 
+---
+
+## 🖼️ Preview
+
+<div align="center">
+  <img src="image/image.png" alt="Yuurigram Preview" width="900" />
+</div>
+
+---
+
+## ✨ Fitur Utama
+
+### ✅ Session & Account
+- **Create New Session** (login, simpan ke folder `Session/`)
+- **Check Account / Session Status** + optional extract:
+  - `number.txt` (phone)
+  - `userid.txt` (user id)
+- **Get Latest Telegram Login Message** (OTP / pesan terbaru)
+
+### ✅ WebApp / InitData
+- **Auto Extract InitData (tgWebAppData)**:
+  - output `query.txt` (raw)
+  - output `user.txt` (user param diprioritaskan)
+
+### ✅ Group/Channel Tools
+- **Auto Join Groups/Channels** (support link public + invite `t.me/+...`)
+  - optional: **mute** setelah join
+  - optional: **archive** setelah join
+- **Auto Leave Groups/Channels** (support `@username`, link, `-100...`, numeric)
+
+### ✅ Chat Management
+- **Mute all chats** / **Unmute all chats**
+- **Archive selected groups/channels**
+- **Block & Delete selected users/chats**
+
+### ✅ Profile & Security
+- **Auto Edit Name** (replace/append first/last, delete last name)
+- **Auto Set 2FA** (hanya jika akun belum punya 2FA)
+
+### ✅ Engagement
+- **Auto Reaction** (pilih 1 emoji atau random dari list)
+
+---
+
+## 🆕 Fitur Baru (Auto Mode)
+
+### 🧮 Auto Solve Math Question (Inline Math Quiz Engine)
+Mode tersedia:
+1. **Click inline dulu**, lalu jawab math dari pesan itu
+2. **Jawab math dulu**, lalu klik inline konfirmasi (smart wait 5 detik di akun pertama)
+3. **Langsung jawab math** dari last message (tanpa inline handling)
+
+
+### 🖱️ Auto Click Inline
+- Scan last message dari bot target untuk menemukan inline buttons
+- Pilih tombol ke-berapa (sekali), lalu tool akan klik tombol itu di semua session
+
+### 💬 Auto Chat (Random / Custom)
+Auto chat ke bot target dengan berbagai tipe pesan:
+- Random link:
+  - X profile / tweet
+  - Facebook profile / post
+  - TikTok profile / post
+  - Instagram profile / story / post / reels
+  - YouTube profile / video / shorts
+- Username mode:
+  - Random username style (DC/X/TELE/IG/TT/FB) + opsi pakai `@` atau tidak
+  - Telegram username real (kalau ada) atau random
+- **Custom text** (kirim persis input kamu)
+- **Crypto address**:
+  - EVM / Solana / TRX  
+  - ⚠️ Address dikirim ke chat, **private key disimpan lokal** ke `Privatekey/privatekey.json`
+
+---
+
+## 🧭 Menu (Versi Script Terbaru)
+```text
+01. Create New Session
+02. Auto Extract InitData
+03. Auto Join Groups/Channels
+04. Auto Leave Groups/Channels
+05. Auto Referral Bot (/start + ref)
+06. Auto Edit Name (First/Last - replace/append/delete)
+07. Auto Reaction (single/random)
+08. Check Account or Session Status & Extract Data
+09. Setting Chat (Mute/Unmute All, Archive Selected, Block/Delete)
+10. Auto Set 2FA (only for accounts without 2FA)
+11. Get Latest Telegram Login Message
+12. Auto Solve Inline Math Questions
+13. Auto Click Inline Button
+14. Auto Chat (links, usernames, YouTube, crypto)
+15. Exit
 ```
+
+---
+
+## 📁 Struktur Folder & Output
+```text
 tg-session-core/
 ├─ Yuurigram.exe
-├─ .env
-├─ Session/
-│  ├─ account1.session
-│  ├─ account2.session
-│  └─ ...
-├─ image/
-│  └─ image.png
-└─ README.md
+├─ .env                 # optional (APP_ID, APP_HASH)
+├─ Session/             # tempat file *.session (multi account)
+├─ Privatekey/
+│  └─ privatekey.json   # output auto chat crypto (private key disimpan di sini)
+├─ query.txt            # output initData raw
+├─ user.txt             # output initData (user param di depan)
+├─ number.txt           # optional output phone
+└─ userid.txt           # optional output user id
 ```
 
-The `Session` folder will be created automatically if it does not exist.
-
----
-
-## ⚙️ Environment Configuration (.env)
-
-Before running the application, you **must create a `.env` file** in the same directory as `Yuuri.exe`.
-
-### Example `.env` file
-```
-APP_ID=12345678
-APP_HASH=abcdef1234567890abcdef1234567890
-```
-
-Notes:
-- Do not use quotes
-- One variable per line
-
----
-
-## 🔑 How to Get Telegram API ID & API HASH
-
-1. Go to https://my.telegram.org
-2. Login with your Telegram account
-3. Select **API development tools**
-4. Fill in the required fields (App title & Short name)
-5. Copy your **API ID** and **API HASH**
-6. Paste them into the `.env` file
-
----
-
-## 🔐 License Activation
-
-This application **requires a valid license** to run.
-
-### How to obtain a license
-1. Open the Telegram bot:  
-   https://t.me/SentinelicenseBot/?start=Yuurisan
-2. Select the label: **TELEGRAM**
-3. Copy the generated license key
-4. Paste the license key when the program requests it
-
-Invalid or expired licenses will cause the application to exit automatically.
-
 ---
 
 
-## ✨ Full Feature List
-
-### 1️⃣ Create New Session
-- Login to Telegram accounts using OTP  
-- Supports accounts with **2FA enabled**  
-- Sessions are stored locally in `.session` (SQLite) format  
-- Session names are generated automatically using username or user ID
-
----
-
-### 2️⃣ Auto Extract InitData (Telegram WebApp)
-- Extracts `tgWebAppData` from Telegram Mini Apps  
-- Supports multiple sessions in one run  
-- Output files:
-  - `query.txt` → raw initData  
-  - `user.txt` → initData reordered with `user` parameter first  
-- Commonly used for Mini Apps, airdrops, and automation workflows
-
----
-
-### 3️⃣ Auto Join Groups / Channels
-- Join multiple groups or channels automatically  
-- Supported inputs:
-  - public links  
-  - private invite links (`t.me/+xxxx`)  
-- Optional features:
-  - auto mute after joining  
-  - auto archive after joining
-
----
-
-### 4️⃣ Auto Leave Groups / Channels
-- Mass leave groups or channels  
-- Supported formats:
-  - links  
-  - `@username`  
-  - channel ID (`-100xxxxxxxxxx`)
-
----
-
-### 5️⃣ Auto Referral Bot
-- Automatically sends `/start` commands to bots  
-- Supports referral codes  
-- Bots are automatically muted and archived after execution
-
----
-
-### 6️⃣ Auto Edit Name
-- Bulk editing of Telegram profile names  
-- Available modes:
-  - Replace first name  
-  - Append first name  
-  - Replace last name  
-  - Append last name  
-  - Delete last name
-
----
-
-### 7️⃣ Auto Reaction
-- React to a single message using multiple accounts  
-- Reaction modes:
-  - one emoji for all sessions  
-  - random emoji from a selected list  
-- Supports:
-  - public channels  
-  - private channels (`t.me/c/...`)  
-  - topic messages
-
----
-
-### 8️⃣ Check Account / Session Status
-- Displays detailed account information:
-  - active / inactive status  
-  - name and username  
-  - phone number  
-  - user ID  
-  - premium status  
-  - scam or restricted flags  
-- Optional export:
-  - `number.txt`  
-  - `userid.txt`
-
----
-
-### 9️⃣ Chat Settings (Mass Control)
-- Mute all chats  
-- Unmute all chats  
-- Archive selected groups or channels  
-- Block users and delete chat history
-
----
-
-### 🔟 Auto Set 2FA
-- Enable 2FA passwords for multiple accounts  
-- Only applies to accounts without existing 2FA  
-- Does not overwrite existing passwords
-
----
-
-### 1️⃣1️⃣ Get Latest Telegram Login Message
-- Retrieve the most recent Telegram login or OTP message  
-- Search by:
-  - session name  
-  - phone number  
-- Message sources:
-  - Telegram official service (777000)  
-  - fallback to Saved Messages
-
----
-
-## 📜 License
-
-This script is distributed for **educational and testing purposes only**.  
-Any usage beyond this scope is the sole responsibility of the user.
-
-For updates and announcements, join the Telegram group:  
-https://t.me/sentineldiscus
+## 🧯 Notes (Anti-Flood)
+- Kalau kena **FloodWait**, itu normal (Telegram limit).  
+- Pakai akun banyak + spam action = resiko limit lebih tinggi.
 
 ---
 
 ## ⚠️ Disclaimer
+Project ini dibuat untuk keperluan pribadi / automation workflow.  
+Gunakan dengan bijak dan tetap patuhi aturan Telegram serta aturan grup/channel yang kamu join.
 
-Use of this tool is entirely at your own risk.  
-The developer is not responsible for any misuse or damage resulting from the use of this software.
+---
+
+<div align="center">
+<img width="100%" alt="footer" src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
+</div>
