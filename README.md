@@ -22,7 +22,7 @@
 
 ## 🚀 Download (EXE Release)
 
-- **Latest EXE (Google Drive):** <a href="https://drive.google.com/file/d/1os7fqwElXOucbh2-_DKBU5zUgSHce11t/view?usp=sharing"><b>Download Yuurigram.exe</b></a>  
+- **Latest EXE (Google Drive):** <a href="https://drive.google.com/file/d/12-bKejVvkR66liqpgJffMhuxFwaeKsAv/view"><b>Download Yuurigram.exe</b></a>  
 - **Ambil LICENSE Key:** <a href="https://t.me/SentinelicenseBot?start=6004380466"><b>SentinelicenseBot</b></a>
 
 ---
